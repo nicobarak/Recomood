@@ -12,12 +12,10 @@ The curated database has 3 tables, one being the name of the moods and its mood_
 
 The website uses Bootstrap in the index, for the cards layout. To the date of release, the site has 9 moods available, being "Classic", "Laughable", "Emotional", "Family", "Fun", "New", "Scary", "Social", and "Unknown".
 
-In app.py, the program uses SQLite queries to get and interact with the database, getting a random movie for each mood. It returns a movie dictionary, putting the responsibility to the html to show de values of each key. The python code DOES NOT give you, for example, the title of the movie, but it gives you the full list of dictionaries for you to access it as movie['title']. This gives the site more potential to maybe have more information built in the view without needing to change a lot of the code.
+In app.py, the program uses SQLite queries to get and interact with the database, getting a random movie for each mood. 
 
 Every single recomendation was personally written and curated, so you'll get not only great recommendations and movies to watch, but also a sense of taste by the creator of the site, having a more human and personal approach. It really is a curated list!
 
 For the translation of the site, the Index page is presented in english, but you have a button that will deliver you to the spanish version of the site. If you are in the spanish version, every mood that you select will deliver you to a spanish version of the View page, having everything translated and with huge care.
 
-In poster_downloader.py, there is an adaptation from my personal final project from CS50P. There is some funcionality not used and wasted because of it. The only function thw website uses is get_movie_obj(movie_name, year) which return a movie object from TMDB, being a list of dictionaries.
-
-### Thanks for reading!
+Thanks for reading!
