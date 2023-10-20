@@ -1,15 +1,8 @@
-import os
-
 import sqlite3
 from flask import (
     Flask,
-    flash,
-    redirect,
     render_template,
-    request,
     session,
-    url_for,
-    make_response,
 )
 from flask_session import Session
 from poster_downloader import get_movie_obj
