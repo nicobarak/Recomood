@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Emotional
+{% endblock %}
+
+{% block bodyclass %}
+    class="unknown_bg"
+{% endblock %}
+
+{% block content %}
+<h2>Peli desconocida:</h2>
+<h2>{{spanish_name}}</h2>
+    <h6>Fecha de lanzamiento (YYYY-DD_MM): {{movie['release_date']}}</h6>
+    <img src= "https://image.tmdb.org/t/p/w342{{movie['poster_path']}}" alt = "Movie Poster" width="200"
+    height="300">
+
+    <h2>Por qué deberías verla?</h2>
+    <h2>{{reco}}</h2>
+
+    <a type="button" formmethod="get" href="/esp_home">Volver</button>
+    </a>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Familiar
+{% endblock %}
+
+{% block bodyclass %}
+    class="familiar_bg"
+{% endblock %}
+
+{% block content %}
+
+<h2>Family Movie:</h2>
+<h2>{{movie['title']}}</h2>
+    <h6>Release Date: {{movie['release_date']}}</h6>
+    <img src= "https://image.tmdb.org/t/p/w342{{movie['poster_path']}}" alt = "Movie Poster" width="200"
+    height="300">
+    <p>Plot:
+        {{movie['overview']}}
+    </p>
+
+    <h2>Why you should watch it?</h2>
+    <h2>{{reco}}</h2>
+
+    <a type="button" formmethod="get" href="/">Go Back</button>
+    </a>
+{% endblock %}
