@@ -6,7 +6,6 @@ from flask import (
 )
 from flask_session import Session
 from poster_downloader import get_movie_obj
-import io
 
 # Configure application
 app = Flask(__name__)
