@@ -1,5 +1,4 @@
 # POSTER DONWLOADER
-### Video Demo: https://www.youtube.com/watch?v=OZd6MV4XwmA&ab_channel=NicoBarak
 
 ### Description:
 
