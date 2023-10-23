@@ -9,19 +9,14 @@
 {% endblock %}
 
 {% block content %}
-
 <h2>Laughable Movie:</h2>
-<h2>{{movie['title']}}</h2>
-    <h6>Release Date: {{movie['release_date']}}</h6>
-    <img src= "https://image.tmdb.org/t/p/w342{{movie['poster_path']}}" alt = "Movie Poster" width="200"
-    height="300">
-    <p>Plot:
-        {{movie['overview']}}
-    </p>
-
-    <h2>Why you should watch it?</h2>
-    <h2>{{reco}}</h2>
-
-    <a type="button" formmethod="get" href="/">Go Back</button>
-    </a>
+<h2>{{movie['title']}} ({{movie['release_date'][0:4]}})</h2>
+<img src="https://image.tmdb.org/t/p/w342{{movie['poster_path']}}" alt="Movie Poster" width="200"
+     height="300">
+<br />
+<br />
+<p>Plot: {{movie['overview']}}</p>
+<h2>Why you should watch it?</h2>
+<h2>{{reco}}</h2>
+<a href="/" class="btn btn-outline-primary btn-lg">Go back</a>
 {% endblock %}
